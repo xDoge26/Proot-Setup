@@ -2,7 +2,7 @@
 set -e
 
 WINE_DIR=~/wine-wow64
-WINE_WOW64=https://github.com/Pi-Apps-Coders/files/releases/download/large-files/wine-8.14.tar.gz
+WINE_WOW64=https://github.com/Kron4ek/Wine-Builds/releases/download/9.20/wine-9.20-amd64-wow64.tar.xz
 
 # Install related kits
 
