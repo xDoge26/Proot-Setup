@@ -61,3 +61,15 @@ exec taskset -c 4-7 box86 wine "$@"
 ' > /usr/local/bin/vulkan
 
 sudo chmod +x /usr/local/bin/vulkan /usr/local/bin/zink /usr/local/bin/virgl
+
+#### 4 VirGL ES (Recommended)
+- Install required packages
+```
+pkg install x11-repo 
+pkg install virglrenderer-android
+```
+- Creating alias
+```
+echo 'alias gl="MESA_NO_ERROR=1 virgl_test_server_android --angle-vulkan &"' >> ~/.bashrc
+source ~/.bashrc
+```
